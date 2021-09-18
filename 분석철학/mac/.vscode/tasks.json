@@ -7,7 +7,7 @@
 			"command": "/usr/bin/clang++",
 			"args": [
 				"-g",
-				"${file}",
+				"${fileDirname}\\*.cpp",
 				"-o",
 				"${fileDirname}/${fileBasenameNoExtension}"
 			],
@@ -17,10 +17,7 @@
 			"problemMatcher": [
 				"$gcc"
 			],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
+			"group": "build",
 			"detail": "컴파일러: /usr/bin/clang++"
 		},
 		{
@@ -42,11 +39,37 @@
 			"group": "build",
 			"detail": "컴파일러: /usr/bin/clang++"
 		},
-		// mac or linux
+
 		{
 			"label": "execute",
-			"command" : "${fileDirname}/${fileBasenameNoExtension}",
-			"group": "test"
+			"command": "cmd",
+			"group": "test",
+			"args": [
+				"/C", "${fileDirname}\\${fileBasenameNoExtension}"
+			]
 		},
+
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe 활성 파일 빌드",
+			"command": "c:\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "c:\\mingw64\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "컴파일러: c:\\mingw64\\bin\\g++.exe"
+		}
 	]
 }
