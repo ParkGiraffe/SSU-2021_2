@@ -1,5 +1,5 @@
 purpose(study).
-use_loc(home).
+use_loc(campus).
 prefOS(iPad_OS).
 
 
@@ -26,7 +26,7 @@ use_env(indoor) :-
     use_loc(company_hold); 
     use_loc(car).
 use_env(outdoor) :-
-    use_loc(school); 
+    use_loc(campus); 
     use_loc(cafe); 
     use_loc(company_commute).
 
