@@ -2,6 +2,11 @@ purpose(study).
 useLoc(campus).
 prefOS(iPad_OS).
 
+/*
+use(X),
+useEnv(Y),
+brand(Z)
+*/
 
 
 use(productivity) :-
