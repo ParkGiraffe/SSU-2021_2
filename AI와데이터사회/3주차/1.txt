@@ -1,0 +1,4 @@
+name, sex, age, score
+kang, male, 20, 100
+lee, female, 21, 85
+kim, female, 35, 79
