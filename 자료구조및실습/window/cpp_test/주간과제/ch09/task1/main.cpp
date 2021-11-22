@@ -10,7 +10,7 @@ int main() {
     QueueByCircularLinkedList Q;
 
     // Josephus의 문제 로직
-    for (int i = 0; i < 41; i++) {
+    for (int i = 0; i < N; i++) {
         Q.enQueue(i+1);
     }
 
