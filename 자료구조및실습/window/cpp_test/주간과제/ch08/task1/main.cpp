@@ -11,11 +11,11 @@ int main()
 
    while (true)
    {
-        cout << "°Ë»çÇÒ ¼ö½ÄÀ» ÀÔ·ÂÇÏ¼¼¿ä." << endl
-             << "'0'À» ÀÔ·ÂÇÏ¸é ÇÁ·Î±×·¥ÀÌ Á¾·áµË´Ï´Ù. " << endl;
+        cout << "ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½." << endl
+             << "'0'ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ë´Ï´ï¿½. " << endl;
         cin >> str;
 
-        if (str[0] == '0')
+        if (str[0] == '0') // cppë¥¼ í¬í•¨í•œ ëŒ€ë¶€ë¶„ì˜ ì–¸ì–´ì—ì„œ ì‘ì€ ë”°ì˜´í‘œëŠ” char, í° ë”°ì˜´í‘œëŠ” stringìœ¼ë¡œ ì¸ì‹í•œë‹¤.  
             return 0;
         
         bool result = testPair(str);
@@ -40,12 +40,12 @@ bool testPair(char str[])
         {
 
             case '(' : case '{' : case '[' :
-                cout << "½ºÅÃ¿¡ »ğÀÔ" << endl;
+                cout << "ï¿½ï¿½ï¿½Ã¿ï¿½ ï¿½ï¿½ï¿½ï¿½" << endl;
                 stack.Push(currChar);
                 break;
 
             case ')' :
-                cout << "( Á¦°Å" << endl;
+                cout << "( ï¿½ï¿½ï¿½ï¿½" << endl;
                 open_pair = stack.Pop();
                 if (open_pair != '(')
                     return false;
@@ -53,7 +53,7 @@ bool testPair(char str[])
                 break;
 
             case '}' :
-                cout << "{ Á¦°Å" << endl;
+                cout << "{ ï¿½ï¿½ï¿½ï¿½" << endl;
                 open_pair = stack.Pop();
                 if (open_pair != '{')
                     return false;
@@ -61,7 +61,7 @@ bool testPair(char str[])
                 break;
 
             case ']' :
-                cout << "[ Á¦°Å" << endl;
+                cout << "[ ï¿½ï¿½ï¿½ï¿½" << endl;
                 open_pair = stack.Pop();
                 if (open_pair != '[')
                     return false;
@@ -78,7 +78,7 @@ bool testPair(char str[])
                 break;
 
             
-            // bracketÀ» "" ·Î ¹­À¸¸é ¿À·ù°¡ ¹ß»ıÇÏ°í, ''·Î ¹­À¸¸é Á¤»óÀûÀ¸·Î ÀÛµ¿
+            // bracketï¿½ï¿½ "" ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ï¿½Ï°ï¿½, ''ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ûµï¿½
         }
 
         i++;
