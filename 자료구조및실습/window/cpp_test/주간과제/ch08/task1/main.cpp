@@ -15,7 +15,7 @@ int main()
              << "'0'을 입력하면 프로그램이 종료됩니다. " << endl;
         cin >> str;
 
-        if (str[0] == '0')
+        if (str[0] == '0') // cpp를 포함한 대부분의 언어에서 작은 따옴표는 char, 큰  따옴표는 string으로 인식한다.
             return 0;
         
         bool result = testPair(str);
