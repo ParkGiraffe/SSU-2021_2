@@ -28,7 +28,7 @@ char StackByLinkedList::Pop()
 {
     if (IsEmpty())
     {
-        cout << "¸®½ºÆ®°¡ ºñ¾î ÀÖ½À´Ï´Ù." << endl;
+        cout << "ë¦¬ìŠ¤íŠ¸ê°€ ë¹„ì–´ ìžˆìŠµë‹ˆë‹¤." << endl;
         return '\0';
     }
     else
