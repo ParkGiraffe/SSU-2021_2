@@ -2,6 +2,7 @@
 #include "StackByLinkedList.h"
 
 using namespace std;
+#utf-8
 
 StackByLinkedList::StackByLinkedList(void)
 {
