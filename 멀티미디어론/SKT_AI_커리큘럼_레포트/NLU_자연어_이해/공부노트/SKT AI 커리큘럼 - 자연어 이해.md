@@ -884,4 +884,4 @@ Rejection은 NLU 사용 접근에서 어려운 문제 중 하나.
 
 ![](./2ab12929-60ca-4819-b716-5bb98d48048e.jpg)  
 
-Rejection은 도메인 분류 단계에서 할 수 있다. Domain이 분류되고 나면
+Rejection은 도메인 분류 단계에서 할 수 있다.
