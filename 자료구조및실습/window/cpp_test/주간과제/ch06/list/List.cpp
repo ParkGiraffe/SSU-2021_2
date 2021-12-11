@@ -13,7 +13,7 @@ void List::Insert(int Position, int Item) {
     if (Count == MAX) 
         cout << "리스트가 꽉 차 있습니다." << endl;
     else if (Position > Count + 1 || Position < 1)
-        cout << "Postion의 범위를 벗어났습니다." << endl;
+        cout << "Position의 범위를 벗어났습니다." << endl;
     else {
         for (int i = Count - 1; i >= Position - 1; i--) {
             Data[i+1] = Data[i];
@@ -25,11 +25,11 @@ void List::Insert(int Position, int Item) {
     }
 }
 
-void List::Delete(int Postion) {
-    if (Postion < 1 || Postion > Count) 
+void List::Delete(int Position) {
+    if (Position < 1 || Position > Count) 
         cout << "Position의 범위를 벗어났습니다." << endl;
     else {
-        for (int i = Postion; i < Count - 1; i++) {
+        for (int i = Position; i < Count - 1; i++) {
             Data[i - 1] = Data[i];
         }
 
@@ -37,11 +37,11 @@ void List::Delete(int Postion) {
     }
 }
 
-void List::Retrieve(int Postion, int *ItemPtr) {
-    if (Postion < 1 || Postion > Count)
-        cout << "Postion의 범위를 벗어났습니다." << endl;
+void List::Retrieve(int Position, int *ItemPtr) {
+    if (Position < 1 || Position > Count)
+        cout << "Position의 범위를 벗어났습니다." << endl;
     else
-        *ItemPtr = Data[Postion - 1];
+        *ItemPtr = Data[Position - 1];
 }
 
 bool List::IsEmpty() {
