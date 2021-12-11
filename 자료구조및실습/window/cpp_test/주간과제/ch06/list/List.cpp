@@ -56,7 +56,7 @@ void List::PrintItem() {
     if (Count < 1)
         cout << "빈 리스트입니다." << endl;
     else {
-        cout << "위치\tData"<<endl; // '\t는 탭을 의미
+        cout << "위치\tData"<<endl; // '\t는' 탭을 의미
 
         for (int i = 0; i < Count; i++) {
             cout << i + 1 <<"\t" << Data[i] << endl;
