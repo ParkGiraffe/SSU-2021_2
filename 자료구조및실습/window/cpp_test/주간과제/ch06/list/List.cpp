@@ -27,7 +27,7 @@ void List::Insert(int Position, int Item) {
 
 void List::Delete(int Postion) {
     if (Postion < 1 || Postion > Count) 
-        cout << "PostionÀÇ ¹üÀ§¸¦ ¹þ¾î³µ½À´Ï´Ù." << endl;
+        cout << "PositionÀÇ ¹üÀ§¸¦ ¹þ¾î³µ½À´Ï´Ù." << endl;
     else {
         for (int i = Postion; i < Count - 1; i++) {
             Data[i - 1] = Data[i];
