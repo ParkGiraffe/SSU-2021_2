@@ -15,10 +15,8 @@ int main() {
     }
 
     while(Q.GetSize() >= M) {
-        Q.enQueue(Q.GetFront());
-        Q.deQueue();
-        Q.enQueue(Q.GetFront());
-        Q.deQueue();
+        Q.enQueue(Q.deQueue());
+        Q.enQueue(Q.deQueue());
         Q.deQueue();
     }
 
